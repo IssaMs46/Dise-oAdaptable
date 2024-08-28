@@ -1,0 +1,58 @@
+
+body 
+{
+    background-color: #444444;
+    
+    
+    color: white;
+    
+
+}
+
+font
+{
+color: white;
+}
+
+/*aqui voy a hacer lo del encabezado*/
+
+.navbar {
+    background-color: #b0b0b0; /* Color de fondo más claro */
+    padding: 10px 20px; /* Espaciado interno */
+    display: flex;
+    justify-content: space-between; /* Espacio entre el logo y el menú */
+    align-items: center; /* Alineación vertical */
+  }
+  
+  .navbar .logo {
+    font-size: 20px; /* Tamaño del texto del logo */
+    font-weight: bold; /* Texto en negrita */
+    color: white; /* Color del texto */
+  }
+  
+  .navbar .menu-icon {
+    font-size: 24px; /* Tamaño del icono del menú */
+    color: white; /* Color del icono */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+  }
+
+@media only screen and (max-width: 767px) 
+{
+    /* CSS rules for mobile devices go here */
+}
+
+
+
+.imagen
+{
+    width: 250px;
+    height: 250px;
+}
+
+.contenedor
+{
+    width: 200px;
+    text-align: center;
+
+}
+
