@@ -14,6 +14,12 @@
             background-color: #f5f5f5;
             color: #333;
         }
+        /* Aplicar margen lateral al contenido general */
+        .content {
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 80%; /* Ajusta el ancho del contenido a un 80% de la pantalla */
+        }
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -74,68 +80,61 @@
         <div class="menu-icon" id="menu-icon">&#9776;</div> <!-- Ícono del menú -->
     </div>
 
-    <!-- Menú desplegable -->
-    <ul class="nav-menu" id="nav-menu">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-    </ul>
+    <!-- Aplicando margen lateral a las secciones -->
+    <div class="content">
+        <section id="inicio">
+            <h3>¡Consigue tu portafolio personalizado!</h3>
+            <a href="menu.html">Explorar menú</a>
+        </section>
 
-    <section id="inicio">
-        <h3>¡Consigue tu portafolio personalizado!</h3>
-        <a href="menu.html">Explorar menú</a>
-    </section>
+        <section id="nosotros">
+            <h2>Nuestra misión</h2>
+            <p>Nuestra misión es empoderar a estudiantes de todas las carreras con herramientas personalizadas que reflejen su potencial único. Creamos portafolios diseñados para destacar habilidades, logros y proyectos, facilitando su camino hacia el éxito profesional y académico.</p>
+        </section>
 
-    <section id="nosotros">
-        <h2>Nuestra misión</h2>
-        <p>Nuestra misión es empoderar a estudiantes de todas las carreras con herramientas personalizadas que reflejen su potencial único. Creamos portafolios diseñados para destacar habilidades, logros y proyectos, facilitando su camino hacia el éxito profesional y académico.</p>
-    </section>
+        <section id="servicios">
+            <h2>¿Para qué tener un portafolio?</h2>
+            <p>Un portafolio es más que una simple recopilación de trabajos; es una poderosa herramienta que permite a los estudiantes mostrar de manera tangible su evolución y capacidades...</p>
 
-    <section id="servicios">
-        <h2>¿Para qué tener un portafolio?</h2>
-        <p>Un portafolio es más que una simple recopilación de trabajos; es una poderosa herramienta que permite a los estudiantes mostrar de manera tangible su evolución y capacidades...</p>
+            <h2>Plantillas de portafolios</h2>
+            <a href="portafolio.html">Más información</a>
+            <div>
+                <img src="images/portfolio1.png" width="200" alt="plantilla portafolio">
+                <img src="images/portfolio2.png" width="200" alt="plantilla portafolio">
+                <img src="images/portfolio3.png" width="250" alt="plantilla portafolio">
+            </div>
 
-        <h2>Plantillas de portafolios</h2>
-        <a href="portafolio.html">Más información</a>
-        <div>
-            <img src="images/portfolio1.png" width="200" alt="plantilla portafolio">
-            <img src="images/portfolio2.png" width="200" alt="plantilla portafolio">
-            <img src="images/portfolio3.png" width="250" alt="plantilla portafolio">
-        </div>
+            <h2>Resumes</h2>
+            <p>Recibe tu resumen personalizado y revisado por un especialista.</p>
+            <a href="resumes.html">
+                <img src="images/resumepers.png" width="200" alt="resume personalizado">
+            </a>
 
-        <h2>Resumes</h2>
-        <p>Recibe tu resumen personalizado y revisado por un especialista.</p>
-        <a href="resumes.html">
-            <img src="images/resumepers.png" width="200" alt="resume personalizado">
-        </a>
+            <h2>Cover Letters</h2>
+            <p>Recibe tu cover letter personalizado y revisado por un especialista.</p>
+            <a href="coverletter.html">
+                <img src="images/coverlet.png" width="200" alt="cover letter personalizado">
+            </a>
 
-        <h2>Cover Letters</h2>
-        <p>Recibe tu cover letter personalizado y revisado por un especialista.</p>
-        <a href="coverletter.html">
-            <img src="images/coverlet.png" width="200" alt="cover letter personalizado">
-        </a>
+            <h2>Servicios</h2>
+            <a href="portafolio.html">Portafolio</a> <br />
+            <a href="resumes.html">Resumes personalizados</a> <br />
+            <a href="coverletter.html">Cover Letter personalizadas</a>
+        </section>
 
-        <h2>Servicios</h2>
-        <a href="portafolio.html">Portafolio</a> <br />
-        <a href="resumes.html">Resumes personalizados</a> <br />
-        <a href="coverletter.html">Cover Letter personalizadas</a>
-    </section>
-
-    <section id="contacto">
-        <h2>Contáctanos</h2>
-        <p>Contacto: recursos.humanos@talentdisplay.com</p>
-        <p>WhatsApp: +57 3008995356</p>
-        <p>Horarios de atención</p>
-        <p>Lunes a jueves: 7:30 a.m. a 12:30 - p.m. 1:30 p.m. a 5:00 p.m.</p>
-        <p>Viernes: 7:30 a.m. a 12:30 p.m. - 1:30 p.m. a 4:30 p.m.</p>
-        <p>Sábados: 8:00 a.m. a 12:00 m.</p>
-        <p>¡Síguenos en nuestras redes sociales!</p>
-    </section>
-
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <p>Contacto: recursos.humanos@talentdisplay.com</p>
+            <p>WhatsApp: +57 3008995356</p>
+            <p>Horarios de atención</p>
+            <p>Lunes a jueves: 7:30 a.m. a 12:30 - p.m. 1:30 p.m. a 5:00 p.m.</p>
+            <p>Viernes: 7:30 a.m. a 12:30 p.m. - 1:30 p.m. a 4:30 p.m.</p>
+            <p>Sábados: 8:00 a.m. a 12:00 m.</p>
+            <p>¡Síguenos en nuestras redes sociales!</p>
+        </section>
+    </div>
 
     <!-- Vinculando el archivo JS -->
     <script src="js/menu.js"></script>
-
 </body>
 </html>
