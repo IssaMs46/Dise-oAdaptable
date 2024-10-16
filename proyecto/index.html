@@ -4,141 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Proyecto</title>
+    <title>Proyecto - Portafolio</title>
+    <style>
+        /* Agregar estilos básicos para mejorar la apariencia */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .menu-icon {
+            font-size: 2em;
+            cursor: pointer;
+        }
+        .nav-menu {
+            display: none;
+            list-style: none;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        .nav-menu li {
+            padding: 10px 20px;
+        }
+        .nav-menu li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+        }
+        .nav-menu li a:hover {
+            background-color: #444;
+        }
+        h2, h3 {
+            color: #333;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar">
         <div class="logo">TALENT DISPLAY</div>
-        <div class="menu-icon">&#9776;</div> <!-- Este es el ícono del menú -->
-      </div>
+        <div class="menu-icon" id="menu-icon">&#9776;</div> <!-- Ícono del menú -->
+    </div>
 
-      <!-- Menú desplegable -->
+    <!-- Menú desplegable -->
+    <ul class="nav-menu" id="nav-menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
 
-      
-<!--<ul class="nav-menu" id="nav-menu">
-    <li><a href="#inicio">Inicio</a></li>
-    <li><a href="#nosotros">Nosotros</a></li>
-    <li><a href="#servicios">Servicios</a></li>
-    <li><a href="#contacto">Contacto</a></li>
-  </ul>-->
+    <section id="inicio">
+        <h3>¡Consigue tu portafolio personalizado!</h3>
+        <a href="menu.html">Explorar menú</a>
+    </section>
 
-    <a href="menu.html">
-        menú
+    <section id="nosotros">
+        <h2>Nuestra misión</h2>
+        <p>Nuestra misión es empoderar a estudiantes de todas las carreras con herramientas personalizadas que reflejen su potencial único. Creamos portafolios diseñados para destacar habilidades, logros y proyectos, facilitando su camino hacia el éxito profesional y académico.</p>
+    </section>
 
-    </a>
-    
-    <h3>
-        ¡Consigue tu portafolio personalizado!
-    </h3>
-   
-    <br>
+    <section id="servicios">
+        <h2>¿Para qué tener un portafolio?</h2>
+        <p>Un portafolio es más que una simple recopilación de trabajos; es una poderosa herramienta que permite a los estudiantes mostrar de manera tangible su evolución y capacidades...</p>
 
-    <h2>
-        Nuestra misión
-    </h2>
-
-    <p>
-        Nuestra misión es empoderar a estudiantes de todas las carreras con herramientas personalizadas que reflejen su potencial único. Creamos portafolios diseñados para destacar habilidades, logros y proyectos, facilitando su camino hacia el éxito profesional y académico.
-
-    </p>
-
-    <br>
-
-    <h2>
-        ¿Para qué tener un portafolio?
-    </h2>
-
-    <p>
-        Un portafolio es más que una simple recopilación de trabajos; es una poderosa herramienta que permite a los estudiantes mostrar de manera tangible su evolución y capacidades. Tener un portafolio personalizado te permite destacar en un mercado competitivo, presentando de manera profesional tus habilidades y experiencias, ya sea en una entrevista de trabajo, solicitud de prácticas, o admisión a programas académicos. Además, te ayuda a reflexionar sobre tu crecimiento y a visualizar tus próximos pasos en tu carrera.
-    </p>
-
-
-    <!---->
-
-    <h2> Plantillas de portafolios</h2>
-    <a href="portafolio.html">
-        Más información
-        <br>
-
-        <a>
+        <h2>Plantillas de portafolios</h2>
+        <a href="portafolio.html">Más información</a>
+        <div>
             <img src="images/portfolio1.png" width="200" alt="plantilla portafolio">
             <img src="images/portfolio2.png" width="200" alt="plantilla portafolio">
             <img src="images/portfolio3.png" width="250" alt="plantilla portafolio">
-
-        </a>
+        </div>
 
         <h2>Resumes</h2>
-        <p> Recibe tu resumen personalizado y revisado por un especialista</p>
-
-
+        <p>Recibe tu resumen personalizado y revisado por un especialista.</p>
         <a href="resumes.html">
-
-            <img src="images/resumepers.png" width= 200 alt="resume personalizado">
+            <img src="images/resumepers.png" width="200" alt="resume personalizado">
         </a>
 
         <h2>Cover Letters</h2>
-        <p> Recibe tu cover letter personalizado y revisado por un especialista</p>
-
-
+        <p>Recibe tu cover letter personalizado y revisado por un especialista.</p>
         <a href="coverletter.html">
-
-            <img src="images/coverlet.png" width= 200 alt="coverlet personalizado">
+            <img src="images/coverlet.png" width="200" alt="cover letter personalizado">
         </a>
-
-       
 
         <h2>Servicios</h2>
-        
-        <a>
-            <img src="images/sevicios.png" width="300" alt="servicios que ofrecemos">
+        <a href="portafolio.html">Portafolio</a> <br />
+        <a href="resumes.html">Resumes personalizados</a> <br />
+        <a href="coverletter.html">Cover Letter personalizadas</a>
+    </section>
 
-           <p></p>
-        <a href="portafolio.html">
-        Portafolio
-        </a>
-
-        <br />
-
-        <a href="resumes.html">
-        Resumes personalizados
-        </a>
-
-        <br />
-
-        <a href="coverletter.html">
-        Cover Letter personalizadas
-        </a>
-
-        <h2>¿Qué recursos manejamos?</h2>
-        <img src="images/listaherr.png" width="300" alt="servicios que ofrecemos">
-
-        <h2>Asociaciones</h2>
-        <img src="images/asocia.png" width="250" alt="asociaciones">
-
-        <h2>Reseñas</h2>
-        <img src="images/reseñas.png" width="250" alt="reseñas">
-
+    <section id="contacto">
         <h2>Contáctanos</h2>
-
-        <p>
-            Contacto:
-            recursos.humanos@talentdisplay.com
-        </p>
-        
+        <p>Contacto: recursos.humanos@talentdisplay.com</p>
         <p>WhatsApp: +57 3008995356</p>
-
-        <p>
-            Horarios de atención    
-        </p>
-
+        <p>Horarios de atención</p>
         <p>Lunes a jueves: 7:30 a.m. a 12:30 - p.m. 1:30 p.m. a 5:00 p.m.</p>
         <p>Viernes: 7:30 a.m. a 12:30 p.m. - 1:30 p.m. a 4:30 p.m.</p>
         <p>Sábados: 8:00 a.m. a 12:00 m.</p>
-         
         <p>¡Síguenos en nuestras redes sociales!</p>
+    </section>
+
+
+    <!-- Vinculando el archivo JS -->
+    <script src="js/menu.js"></script>
 
 </body>
 </html>
-
-
-

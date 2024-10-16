@@ -1,10 +1,8 @@
-/*<script>
-  document.getElementById('menu-icon').addEventListener('click', function() {
-    var navMenu = document.getElementById('nav-menu');
-    if (navMenu.style.display === 'block') {
+document.getElementById('menu-icon').addEventListener('click', function() {
+  var navMenu = document.getElementById('nav-menu');
+  if (navMenu.style.display === 'block') {
       navMenu.style.display = 'none';
-    } else {
+  } else {
       navMenu.style.display = 'block';
-    }
-  });
-</script>*/
+  }
+});
