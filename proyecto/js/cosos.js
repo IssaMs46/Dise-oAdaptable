@@ -5,4 +5,9 @@ document.getElementById('menu-icon').addEventListener('click', function() {
   } else {
       navMenu.style.display = 'block';
   }
+
+
+  
 });
+
+

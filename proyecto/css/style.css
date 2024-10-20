@@ -1,58 +1,79 @@
-
-body 
-{
-    background-color: #444444;
-    
-    
-    color: white;
-    
-
+/* Agregar estilos básicos para mejorar la apariencia */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
-font
-{
-color: white;
+/* Aplicar margen lateral */
+.content {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 90%;
 }
-
-/*aqui voy a hacer lo del encabezado*/
 
 .navbar {
-    background-color: #b0b0b0; /* Color de fondo más claro */
-    padding: 10px 20px; /* Espaciado interno */
-    display: flex;
-    justify-content: space-between; /* Espacio entre el logo y el menú */
-    align-items: center; /* Alineación vertical */
-  }
-  
-  .navbar .logo {
-    font-size: 20px; /* Tamaño del texto del logo */
-    font-weight: bold; /* Texto en negrita */
-    color: white; /* Color del texto */
-  }
-  
-  .navbar .menu-icon {
-    font-size: 24px; /* Tamaño del icono del menú */
-    color: white; /* Color del icono */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
-  }
-
-@media only screen and (max-width: 767px) 
-{
-    /* CSS rules for mobile devices go here */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
 }
 
-
-
-.imagen
-{
-    width: 250px;
-    height: 250px;
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
-.contenedor
-{
-    width: 200px;
-    text-align: center;
-
+.menu-icon {
+  font-size: 2em;
+  cursor: pointer;
 }
 
+.nav-menu {
+  display: none;
+  list-style: none;
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.nav-menu li {
+  padding: 10px 20px;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+
+.nav-menu li a:hover {
+  background-color: #444;
+}
+
+h2, h3 {
+  color: #333;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  margin: 10px;
+}
