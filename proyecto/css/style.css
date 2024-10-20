@@ -9,7 +9,6 @@ body {
 
 /* Aplicar margen lateral */
 .content {
-  margin-top: 60px; /* Ajustar este valor al tamaño de tu barra de navegación */
   margin: 0 auto;
   padding: 20px;
   max-width: 90%;
@@ -18,16 +17,15 @@ body {
 .navbar {
   position: fixed; /* Fija la barra de navegación */
   top: 0; /* Ubicada en la parte superior */
-  width: 100%; /* Ocupar todo el ancho de la pantalla */
-  background-color: #333; /* Mantener el color de fondo */
-  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  background-color: #333;
+  color: white;
   z-index: 1000; /* Asegurar que quede por encima de otros elementos */
+  width: 98%; /* Ocupar todo el ancho de la pantalla */
 }
-
 
 .logo {
   font-size: 1.5em;
