@@ -1,94 +1,216 @@
 /* Agregar estilos básicos para mejorar la apariencia */
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
-  color: #333;
-}
-
-/* Aplicar margen lateral */
-.content {
-  margin: 0 auto;
-  padding: 20px;
-  max-width: 90%;
-}
-
-.navbar {
-  position: fixed; /* Fija la barra de navegación */
-  top: 0; /* Ubicada en la parte superior */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #333;
-  color: white;
-  z-index: 1000; /* Asegurar que quede por encima de otros elementos */
-  width: 98%; /* Ocupar todo el ancho de la pantalla */
-}
-
-.logo {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-.menu-icon {
-  font-size: 2em;
-  cursor: pointer;
-}
-
-
-/* Inicialmente ocultamos el menú */
-.nav-menu {
-  display: none;
-  list-style: none;
-  padding: 0;
-  background-color: #333;
-  margin-top: 50px;
-  position: absolute;
-  width: 100%;
-  z-index: 999;
-}
-
-/* Cuando se activa, el menú se mostrará */
-.nav-menu.active {
-  display: block;
-}
-
-.nav-menu li {
-  padding: 10px;
-}
-
-.nav-menu li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f5f5f5;
+	color: #333;
+  }
   
+  /* Aplicar margen lateral */
+  .content {
+	margin: 0 auto;
+	padding: 20px;
+	max-width: 90%;
+  }
+  
+  .navbar {
+	position: fixed; /* Fija la barra de navegación */
+	top: 0; /* Ubicada en la parte superior */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #333;
+	color: white;
+	z-index: 1000; /* Asegurar que quede por encima de otros elementos */
+	width: 98%; /* Ocupar todo el ancho de la pantalla */
+  }
+  
+  .logo {
+	font-size: 1.5em;
+	font-weight: bold;
+  }
+  
+  .menu-icon {
+	font-size: 2em;
+	cursor: pointer;
+  }
+  
+  
+  /* Inicialmente ocultamos el menú */
+  .nav-menu {
+	display: none;
+	list-style: none;
+	padding: 0;
+	background-color: #333;
+	margin-top: 50px;
+	position: absolute;
+	width: 100%;
+	z-index: 999;
+  }
+  
+  /* Cuando se activa, el menú se mostrará */
+  .nav-menu.active {
+	display: block;
+  }
+  
+  .nav-menu li {
+	padding: 10px;
+  }
+  
+  .nav-menu li a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	
+  }
+  
+  .nav-menu li a:hover {
+	background-color: #444;
+  }
+  
+  h2, h3 {
+	color: #333;
+  }
+  
+  p {
+	font-size: 1.1em;
+	line-height: 1.6;
+  }
+  
+  a {
+	color: #0066cc;
+	text-decoration: none;
+	font-weight: bold;
+  }
+  
+  a:hover {
+	text-decoration: underline;
+  }
+  
+  img {
+	margin: 10px;
+  }
+
+  /* General */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.nav-menu li a:hover {
-  background-color: #444;
-}
-
-h2, h3 {
-  color: #333;
+h1, h2 {
+    color: #004080;
 }
 
 p {
-  font-size: 1.1em;
-  line-height: 1.6;
+    line-height: 1.6;
 }
 
-a {
-  color: #0066cc;
-  text-decoration: none;
-  font-weight: bold;
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #004080;
+    color: white;
 }
 
-a:hover {
-  text-decoration: underline;
+.navbar .logo {
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
-img {
-  margin: 10px;
+.navbar .menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+/* Section */
+.section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Portfolio Templates */
+.portfolio-templates {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio-templates img {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-templates img:hover {
+    transform: scale(1.05);
+}
+
+/* Image Links */
+.image-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.image-links a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.image-links a:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
 }

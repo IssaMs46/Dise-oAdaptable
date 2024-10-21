@@ -1,135 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Proyecto</title>
-
-
+    <title>TALENT DISPLAY - Portafolios Profesionales</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="navbar">
+    <header class="navbar">
         <div class="logo">TALENT DISPLAY</div>
-        <div class="menu-icon">&#9776;</div> <!-- Este es el ícono del menú -->
-    </div>
+        <div class="menu-icon" id="menu-toggle">&#9776;</div>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="portafolio.html">Portafolio</a></li>
+            <li><a href="resumes.html">Resumes</a></li>
+            <li><a href="coverletter.html">Cover Letter</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </header>
 
-    <!-- Menú desplegable -->
-    <ul class="nav-menu" id="nav-menu">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="portafolio.html">Portafolio</a></li>
-        <li><a href="resumes.html">Resumes</a></li>
-        <li><a href="Cover Letter.html">Cover Letter</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-    </ul>
-
-    <!-- Envolver todo el contenido en un div con clase 'content' -->
-    <div class="content">
-        
-
-        <section id="inicio">
-            <br>
-            <br>
-            <h3>¡Consigue tu portafolio personalizado!</h3>
-            
+    <main class="content">
+        <section id="inicio" class="hero">
+            <h1>¡Consigue tu portafolio personalizado!</h1>
+            <p>Crea un portafolio que refleje tu talento y habilidades únicas.</p>
         </section>
 
-        <section id="nosotros">
+        <section id="nosotros" class="section">
             <h2>Nuestra misión</h2>
-            <p>Nuestra misión es empoderar a estudiantes de todas las carreras con herramientas personalizadas que reflejen su potencial único. Creamos portafolios diseñados para destacar habilidades, logros y proyectos, facilitando su camino hacia el éxito profesional y académico.</p>
+            <p>Nuestra misión es empoderar a estudiantes de todas las carreras con herramientas personalizadas que reflejen su potencial único, facilitando su camino hacia el éxito profesional y académico.</p>
         </section>
 
-        <section id="servicios">
-            <h2>¿Para qué tener un portafolio?</h2>
+        <section id="servicios" class="section">
+            <h2>¿Por qué tener un portafolio?</h2>
             <p>Un portafolio es más que una simple recopilación de trabajos; es una poderosa herramienta que permite a los estudiantes mostrar de manera tangible su evolución y capacidades.</p>
         </section>
 
-        <h2><a href="portafolio.html">Plantillas de portafolios</a></h2>
-        <div>
-            <img src="images/portfolio1.png" width="200" alt="plantilla portafolio">
-            <img src="images/portfolio2.png" width="200" alt="plantilla portafolio">
-            <img src="images/portfolio3.png" width="250" alt="plantilla portafolio">
-        </div>
-
-        <h2><a href="resumes.html">Resumes</a></h2>
-        <p>Recibe tu resumen personalizado y revisado por un especialista.</p>
-        <a href="resumes.html">
-            <img src="images/resumepers.png" width="200" alt="resume personalizado">
-        </a>
-
-        <h2><a href="coverletter.html">Cover Letter</a></h2>
-        <p>Recibe tu cover letter personalizado y revisado por un especialista.</p>
-        <a href="coverletter.html">
-            <img src="images/coverlet.png" width="200" alt="cover letter personalizado">
-        </a>
-
-        <h2><a href="servicios.html">Servicios</a></h2>
-        <img src="images/sevicios.png" width="400" alt="servicios que ofrecemos"> <br />
-        <a href="portafolio.html">Portafolio</a> <br />
-        <a href="resumes.html">Resumes personalizados</a> <br />
-        <a href="coverletter.html">Cover Letter personalizadas</a>
-
-        <h2>¿Qué recursos manejamos?</h2>
-        <br>
-        <div class="image-links">
-            <a href="https://resume.io" target="_blank">
-                <img src="images/CircResumeio.png" width="50" alt="resume.io">
-            </a>
-            <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">
-                <img src="images/CircHtml.png" width="50" alt="html">
-            </a>
-            <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
-                <img src="images/CircCss.png" width="50" alt="css">
-            </a>
-            <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
-                <img src="images/CircBlender.png" width="50" alt="blender">
-            </a>
-            <a href="https://github.com" target="_blank">
-                <img src="images/CircGithub.png" width="50" alt="github">
-            </a>
-            <a href="https://www.grammarly.com" target="_blank">
-                <img src="images/CircGrammarly.png" width="50" alt="grammarly">
-            </a>
-            <a href="https://unity.com/es/pages/unity-pro-buy-now?utm_source=google&utm_medium=cpc&utm_campaign=cc_dd_upr_amer_amer-t2_en_pu_sem-gg_acq_br-pr_2023-01_brand-at2_cc3022_ev-br_id:71700000105927803&utm_content=cc_dd_upr_amer_pu_sem_gg_ev-br_pros_x_npd_cpc_kw_sd_all_x_x_brand_id:58700008262791741&utm_term=unity&&&&&gad_source=1&gclid=CjwKCAjw1NK4BhAwEiwAVUHPUE0MqrHxmrr3ndbmREzbnC9wsPHwH5MbdAoyR5nlILhG_3gOyh9vaRoC-PEQAvD_BwE&gclsrc=aw.ds" target="_blank">
-                <img src="images/CircUnity.png" width="50" alt="unity">
-            </a>
-            <a href="https://www.adobe-students.com/creativecloud/buy/students/photoshop/campaign/pricing.html?sdid=7RZ35YTF&mv=search&mv2=paidsearch&ef_id=CjwKCAjw1NK4BhAwEiwAVUHPUG7t-LmNAYF8MfBR0rHVWSJjN1vwWxioby4Tq1nXwVxEFz0SRv1dRRoCCtYQAvD_BwE:G:s&s_kwcid=AL!3085!3!692190348876!e!!g!!photoshop&mv=search&gad_source=1&gclid=CjwKCAjw1NK4BhAwEiwAVUHPUG7t-LmNAYF8MfBR0rHVWSJjN1vwWxioby4Tq1nXwVxEFz0SRv1dRRoCCtYQAvD_BwE" target="_blank">
-                <img src="images/CircPhotoshop.png" width="50" alt="photoshop">
-            </a>
-            <a href="https://www.adobe.com/products/illustrator/campaign/pricing.html?sdid=ZFN4FBV5&mv=search&mv2=paidsearch&ef_id=CjwKCAjw1NK4BhAwEiwAVUHPUJubBxLm7gLW2hgV2I0gUPszjrLSgTVx0hlEsZkbZxB1O8Bck97MHxoCxhUQAvD_BwE:G:s&s_kwcid=AL!3085!3!717388832861!e!!g!!illustrator!1711729586!70905759350&gad_source=1&gclid=CjwKCAjw1NK4BhAwEiwAVUHPUJubBxLm7gLW2hgV2I0gUPszjrLSgTVx0hlEsZkbZxB1O8Bck97MHxoCxhUQAvD_BwE" target="_blank">
-                <img src="images/CircIllustrator.png" width="50" alt="illustrator">
-            </a>
-        </div>
-        
-        <style>
-            .image-links a {
-                display: inline-block;
-                margin-right: 20px; /* Ajusta el espacio entre imágenes si es necesario */
-            }
-        </style>
-        
-
-        <h2>Asociaciones</h2>
-        <img src="images/asocia.png" width="250" alt="asociaciones">
-
-        <h2>Reseñas</h2>
-        <img src="images/reseñas.png" width="250" alt="reseñas">
-
-        <section id="contacto">
-            <h2>Contáctanos</h2>
-            <p>Contacto: recursos.humanos@talentdisplay.com</p>
-            <p>WhatsApp: +57 3008995356</p>
-            <p>Horarios de atención</p>
-            <p>Lunes a jueves: 7:30 a.m. a 12:30 - p.m. 1:30 p.m. a 5:00 p.m.</p>
-            <p>Viernes: 7:30 a.m. a 12:30 p.m. - 1:30 p.m. a 4:30 p.m.</p>
-            <p>Sábados: 8:00 a.m. a 12:00 m.</p>
-            <p>¡Síguenos en nuestras redes sociales!</p>
+        <section id="plantillas" class="section">
+            <h2>Plantillas de portafolios</h2>
+            <div class="portfolio-templates">
+                <img src="images/portfolio1.png" alt="Plantilla Portafolio 1">
+                <img src="images/portfolio2.png" alt="Plantilla Portafolio 2">
+                <img src="images/portfolio3.png" alt="Plantilla Portafolio 3">
+            </div>
         </section>
-    </div>
 
-    <!-- Vinculando el archivo JS -->
+        <section id="resumes" class="section">
+            <h2>Resumes Personalizados</h2>
+            <p>Recibe tu resumen personalizado revisado por un especialista.</p>
+            <a href="resumes.html">
+                <img src="images/resumepers.png" alt="Resume Personalizado">
+            </a>
+        </section>
+
+        <section id="cover-letter" class="section">
+            <h2>Cover Letter Personalizadas</h2>
+            <p>Recibe tu cover letter personalizada revisada por un especialista.</p>
+            <a href="coverletter.html">
+                <img src="images/coverlet.png" alt="Cover Letter Personalizada">
+            </a>
+        </section>
+
+        <section id="recursos" class="section">
+            <h2>Recursos</h2>
+            <div class="image-links">
+                <!-- Enlaces a recursos con imágenes -->
+                <a href="https://resume.io" target="_blank"><img src="images/CircResumeio.png" alt="Resume.io"></a>
+                <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank"><img src="images/CircHtml.png" alt="HTML"></a>
+                <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank"><img src="images/CircCss.png" alt="CSS"></a>
+                <a href="https://www.blender.org" target="_blank"><img src="images/CircBlender.png" alt="Blender"></a>
+                <a href="https://github.com" target="_blank"><img src="images/CircGithub.png" alt="GitHub"></a>
+                <a href="https://www.grammarly.com" target="_blank"><img src="images/CircGrammarly.png" alt="Grammarly"></a>
+                <a href="https://unity.com" target="_blank"><img src="images/CircUnity.png" alt="Unity"></a>
+                <a href="https://www.adobe.com/products/photoshop" target="_blank"><img src="images/CircPhotoshop.png" alt="Photoshop"></a>
+                <a href="https://www.adobe.com/products/illustrator" target="_blank"><img src="images/CircIllustrator.png" alt="Illustrator"></a>
+            </div>
+        </section>
+
+        <section id="contacto" class="section">
+            <h2>Contáctanos</h2>
+            <p>Correo: <a href="mailto:recursos.humanos@talentdisplay.com">recursos.humanos@talentdisplay.com</a></p>
+            <p>WhatsApp: +57 3008995356</p>
+            <p>Horarios de atención:</p>
+            <ul>
+                <li>Lunes a jueves: 7:30 a.m. - 5:00 p.m.</li>
+                <li>Viernes: 7:30 a.m. - 4:30 p.m.</li>
+                <li>Sábados: 8:00 a.m. - 12:00 p.m.</li>
+            </ul>
+            <p>Síguenos en nuestras redes sociales.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Talent Display. Todos los derechos reservados.</p>
+    </footer>
+
+
+
     <script src="js/menu.js"></script>
 </body>
 </html>
+
+
