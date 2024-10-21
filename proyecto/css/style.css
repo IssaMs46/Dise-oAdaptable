@@ -114,6 +114,10 @@ body {
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
 
+#plantillas_boton{
+	text-align: center;
+}
+
 .button h2{
 	color: white;
 }
@@ -514,7 +518,8 @@ h2 {
 }
 
 .portfolio-templates img:hover {
-    transform: scale(1.05);
+    transform: scale(1.125);
+	transform:perspective(150deg)
 }
 
 /* Image Links */
