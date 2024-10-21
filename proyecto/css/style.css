@@ -1,3 +1,101 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column; /* Cambiar a columna para que el logo esté encima del menú */
+    align-items: center; /* Centrar elementos */
+    background-color: #333;
+    padding: 10px 0; /* Ajustar el padding vertical */
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px; /* Espacio debajo del logo */
+}
+
+.menu-icon {
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    display: none; /* Ocultar por defecto */
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Espacio entre elementos */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.nav-menu li a:hover {
+    background-color: #555; /* Cambiar color al pasar el mouse */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Mostrar menú hamburguesa en móviles */
+    }
+
+    .nav-menu {
+        display: none; /* Ocultar el menú por defecto */
+        flex-direction: column; /* Colocar elementos en columna */
+        position: absolute; /* Posicionar el menú */
+        top: 60px; /* Ajustar según la altura del header */
+        left: 0;
+        background-color: #333; /* Color de fondo del menú */
+        width: 100%; /* Ancho completo */
+    }
+
+    .nav-menu.active {
+        display: flex; /* Mostrar menú al hacer clic */
+    }
+
+    .nav-menu li {
+        text-align: center; /* Centrar texto en móviles */
+    }
+}
+
+
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Mostrar menú hamburguesa en pantallas pequeñas */
+    }
+
+    .nav-menu {
+        display: none; /* Ocultar el menú por defecto en móviles */
+        flex-direction: column; /* Colocar los elementos en columna */
+        position: absolute; /* Posicionar el menú */
+        top: 60px; /* Ajustar según la altura del header */
+        left: 0;
+        background-color: #333; /* Color de fondo del menú */
+        width: 100%; /* Ancho completo */
+    }
+
+    .nav-menu.active {
+        display: flex; /* Mostrar menú al hacer clic */
+    }
+
+    .nav-menu li {
+        text-align: center; /* Centrar texto en móviles */
+    }
+}
+
+
 /* Agregar estilos básicos para mejorar la apariencia */
 body {
 	font-family: 'Arial', sans-serif;
@@ -268,18 +366,20 @@ h1 {
     font-family: 'Roboto', sans-serif; /* Fuente moderna */
 }
 
-p {
+.hero p {
     font-size: 1.5em; /* Tamaño más grande para el párrafo */
     margin: 10px 0; /* Espacio alrededor del párrafo */
     max-width: 600px; /* Ancho máximo del párrafo */
     margin-left: auto; /* Centra el párrafo horizontalmente */
     margin-right: auto; /* Centra el párrafo horizontalmente */
+	animation: fadeIn 1s ease-in; /* Animación al cargar */
 }
 
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
 
 .hero h1 {
     font-size: 2.5em;
