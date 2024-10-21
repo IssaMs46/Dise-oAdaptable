@@ -4,7 +4,7 @@ body {
 	margin: 0;
 	padding: 0;
 	/* Cambia estos colores por los que prefieras */
-    background: linear-gradient(to right, #00eeff, #ff6f00); /* Degradado suave */
+    background: linear-gradient(to right, #384455, #434f5f); /* Degradado suave */
 	min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
     margin: 0; /* Elimina el margen por defecto */
     font-family: Arial, sans-serif; /* Cambia la fuente si lo deseas */
@@ -108,11 +108,16 @@ body {
 }
 
 h1, h2 {
-    color: #004080;
+    color: #ffffff;
+}
+h3{
+	font-size: 2em;
+	color: white;
 }
 
 p {
     line-height: 1.6;
+	color: #ffffff;
 }
 
 body {
@@ -164,7 +169,7 @@ body {
 .section {
     margin: 20px;
     padding: 20px;
-    background: linear-gradient(to right, #cfcfcf, #acc9ff); /* Degradado suave */
+    background: linear-gradient(to bottom, #2a303a, #1f2631); /* Degradado suave */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -248,13 +253,32 @@ body {
     padding-top: 180px; /* Agregar espacio para el navbar */
 }
 
-
 /* Hero Section */
 .hero {
-    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 100px 0;
+    text-align: center; /* Centra el contenido */
+    padding: 50px 20px; /* Espaciado alrededor del contenido */
+    color: #ffffff; /* Color del texto */
+}
+
+h1 {
+    font-size: 3em; /* Tamaño grande para el título */
+    margin: 20px 0; /* Espacio alrededor del título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto para darle profundidad */
+    animation: fadeIn 1s ease-in; /* Animación al cargar */
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+}
+
+p {
+    font-size: 1.5em; /* Tamaño más grande para el párrafo */
+    margin: 10px 0; /* Espacio alrededor del párrafo */
+    max-width: 600px; /* Ancho máximo del párrafo */
+    margin-left: auto; /* Centra el párrafo horizontalmente */
+    margin-right: auto; /* Centra el párrafo horizontalmente */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .hero h1 {
@@ -344,7 +368,7 @@ footer p {
     margin: 0;
 }
 
-#resumes {
+#resumes, #nosotros, #servicios {
     text-align: center; /* Para centrar todo el contenido dentro de la sección */
 }
 
@@ -394,6 +418,7 @@ footer p {
 .horarios ul {
     list-style-type: none;
     padding: 0;
+	color: white;
 }
 
 .horarios li {
