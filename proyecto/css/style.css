@@ -646,3 +646,28 @@ footer p {
 	text-align: center;
 }
 
+
+/* Estilos del carrusel */
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth; /* Scroll suave */
+    scrollbar-width: none; /* Esconder la barra de scroll en Firefox */
+}
+
+.carousel-track::-webkit-scrollbar {
+    display: none; /* Esconder la barra de scroll en Chrome/Safari */
+}
+.carousel-track img {
+    width: calc(33.33% - 10px); /* Mostrar 3 imágenes a la vez */
+    object-fit: cover;
+}
+
+
+
+
