@@ -14,6 +14,24 @@ body {
 	max-width: 90%;
   }
   
+  #portafolio_Descripcion
+  {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+ #portafolio_texto
+ {
+  text-align: center;
+ }
+
+ .image-links a:hover {
+  transform: scale(1.1);
+}
+  
   .navbar {
 	position: fixed; /* Fija la barra de navegación */
 	top: 0; /* Ubicada en la parte superior */
@@ -284,6 +302,8 @@ body {
 .portfolio-templates img:hover {
     transform: scale(1.05);
 }
+
+
 
 /* Image Links */
 .image-links {
