@@ -314,4 +314,71 @@ footer p {
     margin: 0;
 }
 
+#resumes {
+    text-align: center; /* Para centrar todo el contenido dentro de la sección */
+}
+
+.centrar-texto {
+    text-align: center; /* Específicamente para centrar el texto del párrafo */
+}
+
+#cover-letter {
+    text-align: center; /* Para centrar todo el contenido dentro de la sección */
+}
+
+.centrar-texto {
+    text-align: center; /* Específicamente para centrar el texto del párrafo */
+}
+
+#contacto {
+    padding: 40px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-info p, .horarios p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.contact-info i, .social-icons i {
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.horarios ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.horarios li {
+    margin: 5px 0;
+}
+
+.social-icons a {
+    font-size: 1.5em;
+    margin: 0 10px;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0056b3;
+}
+
 
