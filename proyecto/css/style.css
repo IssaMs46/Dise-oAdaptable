@@ -548,7 +548,7 @@ h2 {
 .portfolio-item {
      /* Centra el texto y las imágenes dentro del contenedor */
     flex-shrink: 0; /* Evita que los elementos se reduzcan */
-    max-width: 800px; /* Limita el tamaño máximo de cada item */
+    max-width: 500px; /* Limita el tamaño máximo de cada item */
 }
 
 .portfolio-templates img {
