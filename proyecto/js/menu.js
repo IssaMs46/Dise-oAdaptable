@@ -22,7 +22,7 @@ function sendWhatsAppMessage() {
   // Define el número de teléfono
   const phoneNumber = '+573008995356';
   // Define el mensaje que quieres enviar
-  const message = 'Hola TalentDisplay! estoy interesado en adquirir un producto ';
+  const message = 'Hola TalentDisplay! estoy interesado en adquirir un producto';
   // Crea la URL de WhatsApp
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   // Abre WhatsApp en una nueva pestaña
