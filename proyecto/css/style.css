@@ -538,6 +538,13 @@ h2 {
     gap: 20px;
 }
 
+.portfolio2-templates {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /*ACA NECESITO AYUDA */
+}
+
 .portfolio-item {
      /* Centra el texto y las imágenes dentro del contenedor */
     flex-shrink: 0; /* Evita que los elementos se reduzcan */
