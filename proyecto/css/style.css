@@ -391,6 +391,15 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.section2 {
+    margin: 20px;
+    padding: 80px;
+    background: linear-gradient(to bottom, #2a303a, #1f2631); /* Degradado suave */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -527,6 +536,12 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+
+.portfolio-item {
+     /* Centra el texto y las imágenes dentro del contenedor */
+    flex-shrink: 0; /* Evita que los elementos se reduzcan */
+    max-width: 800px; /* Limita el tamaño máximo de cada item */
 }
 
 .portfolio-templates img {
