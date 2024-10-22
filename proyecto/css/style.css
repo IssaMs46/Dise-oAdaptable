@@ -1,11 +1,215 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column; /* Cambiar a columna para que el logo esté encima del menú */
+    align-items: center; /* Centrar elementos */
+    background-color: #333;
+    padding: 10px 0; /* Ajustar el padding vertical */
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px; /* Espacio debajo del logo */
+}
+
+.menu-icon {
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    display: none; /* Ocultar por defecto */
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Espacio entre elementos */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.nav-menu li a:hover {
+    background-color: #555; /* Cambiar color al pasar el mouse */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Mostrar menú hamburguesa en móviles */
+    }
+
+    .nav-menu {
+        display: none; /* Ocultar el menú por defecto */
+        flex-direction: column; /* Colocar elementos en columna */
+        position: absolute; /* Posicionar el menú */
+        top: 60px; /* Ajustar según la altura del header */
+        left: 0;
+        background-color: #333; /* Color de fondo del menú */
+        width: 100%; /* Ancho completo */
+    }
+
+    .nav-menu.active {
+        display: flex; /* Mostrar menú al hacer clic */
+    }
+
+    .nav-menu li {
+        text-align: center; /* Centrar texto en móviles */
+    }
+}
+
+
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Mostrar menú hamburguesa en pantallas pequeñas */
+    }
+
+    .nav-menu {
+        display: none; /* Ocultar el menú por defecto en móviles */
+        flex-direction: column; /* Colocar los elementos en columna */
+        position: absolute; /* Posicionar el menú */
+        top: 60px; /* Ajustar según la altura del header */
+        left: 0;
+        background-color: #333; /* Color de fondo del menú */
+        width: 100%; /* Ancho completo */
+    }
+
+    .nav-menu.active {
+        display: flex; /* Mostrar menú al hacer clic */
+    }
+
+    .nav-menu li {
+        text-align: center; /* Centrar texto en móviles */
+    }
+}
+
+/* Botones de cover letter y resume */
+
+.button {
+    display: inline-block;
+    padding: 15px 30px; /* Ajusta el tamaño del botón */
+    margin-top: 10px; /* Espaciado arriba del botón */
+    background: linear-gradient(135deg, #4e54c8, #8f94fb); /* Degradado atractivo */
+    border: none; /* Sin borde */
+    border-radius: 30px; /* Bordes redondeados */
+    color: white; /* Color del texto */
+    font-size: 18px; /* Tamaño de la fuente */
+    font-weight: bold; /* Fuente en negrita */
+    text-decoration: none; /* Quitar subrayado */
+    text-align: center; /* Centrar el texto */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+#plantillas_boton{
+	text-align: center;
+}
+
+.button h2{
+	color: white;
+}
+
+.button:hover {
+    transform: translateY(-3px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+.button:active {
+    transform: translateY(1px); /* Efecto de hundimiento al hacer clic */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Regresa a la sombra original */
+}
+
+#plantillas h2{
+	text-align: center;
+}
+/* Resumes */
+
+.resume-examples {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.resume-examples h3
+{
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+}
+
+.example {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px; /* Espaciado entre ejemplos */
+}
+
+.example img {
+    max-width: 100%;
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para las imágenes */
+}
+
+.checklist {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2b3546; /* Fondo oscuro para la checklist */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para la checklist */
+}
+
+.checklist ul {
+    list-style-type: none; /* Quitar los puntos de la lista */
+    padding: 0; /* Quitar el padding por defecto */
+    margin: 0; /* Quitar el margen por defecto */
+}
+
+.checklist li {
+    margin: 5px 0; /* Espaciado entre los elementos de la lista */
+	color: white;
+}
+
+.image-hover  {
+    display: inline-block;
+    transition: transform 0.2s ease; /* Transición suave */
+    transform-origin: center; /* Establece el origen de la transformación en el centro */
+	
+	
+}
+
+.image-hover img:hover {
+
+	transform: scale 0.01 ease;
+	transform: scale(1.015);
+	
+}
+
+
+
+
 /* Agregar estilos básicos para mejorar la apariencia */
 body {
 	font-family: 'Arial', sans-serif;
 	margin: 0;
 	padding: 0;
-	background-color: #f5f5f5;
+	/* Cambia estos colores por los que prefieras */
+    background: linear-gradient(to right, #384455, #434f5f); /* Degradado suave */
+	min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
+    margin: 0; /* Elimina el margen por defecto */
+    font-family: Arial, sans-serif; /* Cambia la fuente si lo deseas */
 	color: #333;
   }
+
   
   /* Aplicar margen lateral */
   .content {
@@ -121,11 +325,16 @@ body {
 }
 
 h1, h2 {
-    color: #004080;
+    color: #ffffff;
+}
+h3{
+	font-size: 2em;
+	color: white;
 }
 
 p {
     line-height: 1.6;
+	color: #ffffff;
 }
 
 body {
@@ -177,7 +386,7 @@ body {
 .section {
     margin: 20px;
     padding: 20px;
-    background-color: white;
+    background: linear-gradient(to bottom, #2a303a, #1f2631); /* Degradado suave */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -261,14 +470,35 @@ body {
     padding-top: 180px; /* Agregar espacio para el navbar */
 }
 
-
 /* Hero Section */
 .hero {
-    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 100px 0;
+    text-align: center; /* Centra el contenido */
+    padding: 50px 20px; /* Espaciado alrededor del contenido */
+    color: #ffffff; /* Color del texto */
 }
+
+h1 {
+    font-size: 3em; /* Tamaño grande para el título */
+    margin: 20px 0; /* Espacio alrededor del título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto para darle profundidad */
+    animation: fadeIn 1s ease-in; /* Animación al cargar */
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+}
+
+.hero p {
+    font-size: 1.5em; /* Tamaño más grande para el párrafo */
+    margin: 10px 0; /* Espacio alrededor del párrafo */
+    max-width: 600px; /* Ancho máximo del párrafo */
+    margin-left: auto; /* Centra el párrafo horizontalmente */
+    margin-right: auto; /* Centra el párrafo horizontalmente */
+	animation: fadeIn 1s ease-in; /* Animación al cargar */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 
 .hero h1 {
     font-size: 2.5em;
@@ -281,10 +511,16 @@ body {
     margin: 0 auto;
 }
 
-.section h2 {
-    text-align: center;
-    margin-bottom: 20px;
+h2 {
+    font-size: 2em; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    color: #cbcdff; /* Color principal */
+    margin: 20px 0; /* Espaciado vertical */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    position: relative; /* Posición relativa para el efecto de sombra */
 }
+
 
 /* Portfolio Templates */
 .portfolio-templates {
@@ -300,7 +536,8 @@ body {
 }
 
 .portfolio-templates img:hover {
-    transform: scale(1.05);
+    transform: scale(1.125);
+	transform:perspective(150deg)
 }
 
 
@@ -315,12 +552,37 @@ body {
 
 .image-links a {
     display: inline-block;
+    position: relative; /* Necesario para el tooltip */
     transition: transform 0.3s ease;
 }
 
 .image-links a:hover {
     transform: scale(1.1);
 }
+
+/* Tooltip Styles */
+.tooltip-text {
+    visibility: hidden; /* Oculto por defecto */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro y transparente */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 120%; /* Muestra el tooltip encima de la imagen */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    opacity: 0; /* Invisible al inicio */
+    transition: opacity 0.3s ease;
+    z-index: 1; /* Asegura que esté por encima de otros elementos */
+}
+
+.image-links a:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
 
 /* Footer */
 footer {
@@ -333,5 +595,104 @@ footer {
 footer p {
     margin: 0;
 }
+
+#resumes, #nosotros, #servicios {
+    text-align: center; /* Para centrar todo el contenido dentro de la sección */
+}
+
+.centrar-texto {
+    text-align: center; /* Específicamente para centrar el texto del párrafo */
+}
+
+#cover-letter {
+    text-align: center; /* Para centrar todo el contenido dentro de la sección */
+}
+
+.centrar-texto {
+    text-align: center; /* Específicamente para centrar el texto del párrafo */
+}
+
+#contacto {
+    padding: 40px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-info p, .horarios p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.contact-info i, .social-icons i {
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.horarios ul {
+    list-style-type: none;
+    padding: 0;
+	color: white;
+}
+
+.horarios li {
+    margin: 5px 0;
+}
+
+.social-icons a {
+    font-size: 1.5em;
+    margin: 0 10px;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0056b3;
+}
+
+
+
+
+#recursos h2{
+	text-align: center;
+}
+
+
+/* Estilos del carrusel */
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth; /* Scroll suave */
+    scrollbar-width: none; /* Esconder la barra de scroll en Firefox */
+}
+
+.carousel-track::-webkit-scrollbar {
+    display: none; /* Esconder la barra de scroll en Chrome/Safari */
+}
+.carousel-track img {
+    width: calc(33.33% - 10px); /* Mostrar 3 imágenes a la vez */
+    object-fit: cover;
+}
+
+
 
 
