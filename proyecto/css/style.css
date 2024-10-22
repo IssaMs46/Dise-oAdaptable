@@ -115,11 +115,11 @@ body {
 }
 
 #plantillas_boton{
-	text-align: center;
+    text-align: center;
 }
 
 .button h2{
-	color: white;
+    color: white;
 }
 
 .button:hover {
@@ -133,7 +133,7 @@ body {
 }
 
 #plantillas h2{
-	text-align: center;
+    text-align: center;
 }
 /* Resumes */
 
@@ -144,8 +144,8 @@ body {
 }
 .resume-examples h3
 {
-	writing-mode: vertical-rl;
-	transform: rotate(180deg);
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
 }
 
 .example {
@@ -176,22 +176,22 @@ body {
 
 .checklist li {
     margin: 5px 0; /* Espaciado entre los elementos de la lista */
-	color: white;
+    color: white;
 }
 
 .image-hover  {
     display: inline-block;
     transition: transform 0.2s ease; /* Transición suave */
     transform-origin: center; /* Establece el origen de la transformación en el centro */
-	
-	
+
+
 }
 
 .image-hover img:hover {
 
-	transform: scale 0.01 ease;
-	transform: scale(1.015);
-	
+    transform: scale 0.01 ease;
+    transform: scale(1.015);
+
 }
 
 
@@ -199,123 +199,123 @@ body {
 
 /* Agregar estilos básicos para mejorar la apariencia */
 body {
-	font-family: 'Arial', sans-serif;
-	margin: 0;
-	padding: 0;
-	/* Cambia estos colores por los que prefieras */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Cambia estos colores por los que prefieras */
     background: linear-gradient(to right, #384455, #434f5f); /* Degradado suave */
-	min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
+    min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
     margin: 0; /* Elimina el margen por defecto */
     font-family: Arial, sans-serif; /* Cambia la fuente si lo deseas */
-	color: #333;
-  }
+    color: #333;
+}
 
-  
-  /* Aplicar margen lateral */
-  .content {
-	margin: 0 auto;
-	padding: 20px;
-	max-width: 90%;
-  }
-  
-  #portafolio_Descripcion
-  {
+
+/* Aplicar margen lateral */
+.content {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 90%;
+}
+
+#portafolio_Descripcion
+{
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
-  }
-
- #portafolio_texto
- {
-  text-align: center;
- }
-
- .image-links a:hover {
-  transform: scale(1.1);
 }
-  
-  .navbar {
-	position: fixed; /* Fija la barra de navegación */
-	top: 0; /* Ubicada en la parte superior */
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px 20px;
-	background-color: #333;
-	color: white;
-	z-index: 1000; /* Asegurar que quede por encima de otros elementos */
-	width: 98%; /* Ocupar todo el ancho de la pantalla */
-  }
-  
-  .logo {
-	font-size: 1.5em;
-	font-weight: bold;
-  }
-  
-  .menu-icon {
-	font-size: 2em;
-	cursor: pointer;
-  }
-  
-  
-  /* Inicialmente ocultamos el menú */
-  .nav-menu {
-	display: none;
-	list-style: none;
-	padding: 0;
-	background-color: #333;
-	margin-top: 50px;
-	position: absolute;
-	width: 100%;
-	z-index: 999;
-  }
-  
-  /* Cuando se activa, el menú se mostrará */
-  .nav-menu.active {
-	display: block;
-  }
-  
-  .nav-menu li {
-	padding: 10px;
-  }
-  
-  .nav-menu li a {
-	color: white;
-	text-decoration: none;
-	font-weight: bold;
-	
-  }
-  
-  .nav-menu li a:hover {
-	background-color: #444;
-  }
-  
-  h2, h3 {
-	color: #333;
-  }
-  
-  p {
-	font-size: 1.1em;
-	line-height: 1.6;
-  }
-  
-  a {
-	color: #0066cc;
-	text-decoration: none;
-	font-weight: bold;
-  }
-  
-  a:hover {
-	text-decoration: underline;
-  }
-  
-  img {
-	margin: 10px;
-  }
 
-  /* General */
+#portafolio_texto
+{
+    text-align: center;
+}
+
+.image-links a:hover {
+    transform: scale(1.1);
+}
+
+.navbar {
+    position: fixed; /* Fija la barra de navegación */
+    top: 0; /* Ubicada en la parte superior */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    z-index: 1000; /* Asegurar que quede por encima de otros elementos */
+    width: 98%; /* Ocupar todo el ancho de la pantalla */
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.menu-icon {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+
+/* Inicialmente ocultamos el menú */
+.nav-menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    background-color: #333;
+    margin-top: 50px;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+
+/* Cuando se activa, el menú se mostrará */
+.nav-menu.active {
+    display: block;
+}
+
+.nav-menu li {
+    padding: 10px;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.nav-menu li a:hover {
+    background-color: #444;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    margin: 10px;
+}
+
+/* General */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -328,13 +328,13 @@ h1, h2 {
     color: #ffffff;
 }
 h3{
-	font-size: 2em;
-	color: white;
+    font-size: 2em;
+    color: white;
 }
 
 p {
     line-height: 1.6;
-	color: #ffffff;
+    color: #ffffff;
 }
 
 body {
@@ -462,7 +462,7 @@ body {
         width: 100%;
         background-color: #007bff; /* Fondo del menú desplegable */
     }
-	
+
 
     .nav-menu.active {
         display: flex; /* Mostrar menú cuando esté activo */
@@ -500,7 +500,7 @@ h1 {
     max-width: 600px; /* Ancho máximo del párrafo */
     margin-left: auto; /* Centra el párrafo horizontalmente */
     margin-right: auto; /* Centra el párrafo horizontalmente */
-	animation: fadeIn 1s ease-in; /* Animación al cargar */
+    animation: fadeIn 1s ease-in; /* Animación al cargar */
 }
 
 @keyframes fadeIn {
@@ -552,7 +552,7 @@ h2 {
 
 .portfolio-templates img:hover {
     transform: scale(1.125);
-	transform:perspective(150deg)
+    transform:perspective(150deg)
 }
 
 
@@ -661,7 +661,7 @@ footer p {
 .horarios ul {
     list-style-type: none;
     padding: 0;
-	color: white;
+    color: white;
 }
 
 .horarios li {
@@ -683,7 +683,7 @@ footer p {
 
 
 #recursos h2{
-	text-align: center;
+    text-align: center;
 }
 
 
@@ -711,3 +711,56 @@ footer p {
 
 
 
+
+
+
+
+
+/*Sparkles*/
+#effect-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.sparkle {
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    background-color:#b200ff;
+    box-shadow: 0 0 10px 5px rgba(178, 0, 255, 0.6);
+    border-radius: 50%;
+    opacity: 0;
+    animation: sparkleMove 0.5s ease-out forwards;
+}
+
+@keyframes sparkleMove {
+    0% {
+        transform: scale(0.5);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.click-effect {
+    animation: explode 0.5s ease-out forwards;
+    background-color: #b200ff; /* Color morado */
+    box-shadow: 0 0 20px 10px rgba(178, 0, 255, 0.8);
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(0.5);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
