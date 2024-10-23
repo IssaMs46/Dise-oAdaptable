@@ -1,3 +1,97 @@
+
+
+
+/* Partes que son cambian al cambiar tamaño de la pantalla */
+
+
+
+/*------------------------------------------------------------- */
+/* --------------------------TABLET------------------------------ */
+/*------------------------------------------------------------- */
+
+@media screen and (max-width: 1024px) and (min-width: 764px){ 
+
+    /* Botones de cover letter y resume */
+    
+    .button {
+        display: inline-block;
+        padding: 15px 30px; /* Ajusta el tamaño del botón */
+        margin-top: 10px; /* Espaciado arriba del botón */
+        background: linear-gradient(135deg, #4e54c8, #8f94fb); /* Degradado atractivo */
+        border: none; /* Sin borde */
+        border-radius: 30px; /* Bordes redondeados */
+        color: white; /* Color del texto */
+        font-size: 18px; /* Tamaño de la fuente */
+        font-weight: bold; /* Fuente en negrita */
+        text-decoration: none; /* Quitar subrayado */
+        text-align: center; /* Centrar el texto */
+        transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    }
+    
+    #plantillas_boton{
+        text-align: center;
+    }
+    
+    .button h2{
+        color: white;
+    }
+    
+    .button:hover {
+        transform: translateY(-3px); /* Efecto de elevación al pasar el mouse */
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+    }
+    
+    .button:active {
+        transform: translateY(1px); /* Efecto de hundimiento al hacer clic */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Regresa a la sombra original */
+    }
+    
+    #plantillas h2{
+        text-align: center;
+    }
+}
+
+
+
+
+/*------------------------------------------------------------- */
+/* --------------------------CELULAR------------------------------ */
+/*------------------------------------------------------------- */
+
+@media screen and (max-width: 764px){
+    .button {
+        display: inline-block;
+        padding: 15px 30px; /* Ajusta el tamaño del botón */
+        margin-top: 10px; /* Espaciado arriba del botón */
+        background: linear-gradient(135deg, #4e54c8, #8f94fb); /* Degradado atractivo */
+        border: none; /* Sin borde */
+        border-radius: 30px; /* Bordes redondeados */
+        color: white; /* Color del texto */
+        font-size: 10px; /* Tamaño de la fuente */
+        font-weight: bold; /* Fuente en negrita */
+        text-decoration: none; /* Quitar subrayado */
+        text-align: center; /* Centrar el texto */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+    }
+    
+    #plantillas_boton{
+        text-align: center;
+    }
+    
+    .button h2{
+        color: white;
+        size: 1em
+    }
+    
+    #plantillas h2{
+        text-align: center;
+    }
+}
+
+
+
 body {
     margin: 0;
     padding: 0;
@@ -66,15 +160,25 @@ body {
 @media (max-width: 768px) {
     .menu-icon {
         display: block; /* Mostrar menú hamburguesa en móviles */
+        position: absolute;
+        left: 20px;
+
     }
+
+    .button{
+        color: blue;
+    }
+
+
+    /* Menú hamburguesa */
 
     .nav-menu {
         display: none; /* Ocultar el menú por defecto */
         flex-direction: column; /* Colocar elementos en columna */
         position: absolute; /* Posicionar el menú */
-        top: 60px; /* Ajustar según la altura del header */
         left: 0;
-        background-color: #333; /* Color de fondo del menú */
+        top 5px;
+        background: linear-gradient(to bottom, #37445a, #1d2430); /* Color de fondo del menú */
         width: 100%; /* Ancho completo */
     }
 
@@ -85,48 +189,30 @@ body {
     .nav-menu li {
         margin: 10px 0;
         text-align: center; /* Centrar texto en móviles */
+        border-bottom: 2px solid #f5f5f560; /* Línea divisoria entre los ítems */
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .nav-menu li:last-child {
+        border-bottom: none; /* Elimina la línea divisoria del último ítem */
+    }
+    
+    .nav-menu li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 0;
+        display: block; /* Cada enlace toma toda la fila */
     }
 }
-/* Botones de cover letter y resume */
 
-.button {
-    display: inline-block;
-    padding: 15px 30px; /* Ajusta el tamaño del botón */
-    margin-top: 10px; /* Espaciado arriba del botón */
-    background: linear-gradient(135deg, #4e54c8, #8f94fb); /* Degradado atractivo */
-    border: none; /* Sin borde */
-    border-radius: 30px; /* Bordes redondeados */
-    color: white; /* Color del texto */
-    font-size: 18px; /* Tamaño de la fuente */
-    font-weight: bold; /* Fuente en negrita */
-    text-decoration: none; /* Quitar subrayado */
-    text-align: center; /* Centrar el texto */
-    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-}
 
-#plantillas_boton{
-    text-align: center;
-}
 
-.button h2{
-    color: white;
-}
 
-.button:hover {
-    transform: translateY(-3px); /* Efecto de elevación al pasar el mouse */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
-}
 
-.button:active {
-    transform: translateY(1px); /* Efecto de hundimiento al hacer clic */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Regresa a la sombra original */
-}
 
-#plantillas h2{
-    text-align: center;
-}
+
 /* Resumes */
 
 .resume-examples {
