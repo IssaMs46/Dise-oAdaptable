@@ -129,13 +129,14 @@ body {
     position: absolute;
     width: 100%;
     z-index: 999;
-
+    justify-content: center;
 }
 .nav-menu li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     padding: 8px 16px;
+    
 }
 /* Cuando se activa, el menú se mostrará */
 .nav-menu.active {
@@ -145,6 +146,7 @@ body {
 .nav-menu li {
     padding: 10px;
     margin: 0 15px;
+    
 }
 
 .nav-menu li a:hover {
@@ -177,7 +179,7 @@ body {
         flex-direction: column; /* Colocar elementos en columna */
         position: absolute; /* Posicionar el menú */
         left: 0;
-        top 5px;
+        top: 5px;
         background: linear-gradient(to bottom, #37445a, #1d2430); /* Color de fondo del menú */
         width: 100%; /* Ancho completo */
     }
@@ -341,6 +343,7 @@ p {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 1200px;
+    text-align: center;
 }
 .section2 {
     margin: 20px;
@@ -430,10 +433,7 @@ h2 {
 
 .portfolio-templates img:hover {
     transform: scale(1.125);
-    transform:perspective(150deg);
 }
-
-
 
 /* Image Links */
 .image-links {
