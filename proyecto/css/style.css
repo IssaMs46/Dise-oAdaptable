@@ -1,45 +1,66 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    /* Cambia estos colores por los que prefieras */
+    background: linear-gradient(to right, #384455, #434f5f); /* Degradado suave */
+    min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
+    margin: 0; /* Elimina el margen por defecto */
+    font-family: 'Poppins', sans-serif; /* Fuente predeterminada */
+    color: #333;
 }
-
 .navbar {
+    flex-direction: column;
+    position: fixed; /* Fija la barra de navegación */
+    top: 0; /* Ubicada en la parte superior */
     display: flex;
-    flex-direction: column; /* Cambiar a columna para que el logo esté encima del menú */
-    align-items: center; /* Centrar elementos */
-    background-color: #333;
-    padding: 10px 0; /* Ajustar el padding vertical */
-}
-
-.logo {
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: #0056b3;
     color: white;
-    font-size: 24px;
-    margin-bottom: 10px; /* Espacio debajo del logo */
+    z-index: 1000; /* Asegurar que quede por encima de otros elementos */
+    width: 98%; /* Ocupar todo el ancho de la pantalla */
 }
-
 .menu-icon {
     color: white;
     font-size: 28px;
     cursor: pointer;
     display: none; /* Ocultar por defecto */
 }
-
 .nav-menu {
-    list-style: none;
     display: flex;
-    gap: 15px; /* Espacio entre elementos */
-    margin: 0;
+    list-style: none;
     padding: 0;
-}
+    background-color: #333;
+    margin-top: 40px;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
 
+}
 .nav-menu li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
     padding: 8px 16px;
+}
+/* Cuando se activa, el menú se mostrará */
+.nav-menu.active {
+    display: block;
+}
+
+.nav-menu li {
+    padding: 10px;
+    margin: 0 15px;
 }
 
 .nav-menu li a:hover {
-    background-color: #555; /* Cambiar color al pasar el mouse */
+    background-color: #444;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
 }
 
 /* Estilos responsivos */
@@ -63,38 +84,10 @@ body {
     }
 
     .nav-menu li {
+        margin: 10px 0;
         text-align: center; /* Centrar texto en móviles */
     }
 }
-
-
-
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .menu-icon {
-        display: block; /* Mostrar menú hamburguesa en pantallas pequeñas */
-    }
-
-    .nav-menu {
-        display: none; /* Ocultar el menú por defecto en móviles */
-        flex-direction: column; /* Colocar los elementos en columna */
-        position: absolute; /* Posicionar el menú */
-        top: 60px; /* Ajustar según la altura del header */
-        left: 0;
-        background-color: #333; /* Color de fondo del menú */
-        width: 100%; /* Ancho completo */
-    }
-
-    .nav-menu.active {
-        display: flex; /* Mostrar menú al hacer clic */
-    }
-
-    .nav-menu li {
-        text-align: center; /* Centrar texto en móviles */
-    }
-}
-
 /* Botones de cover letter y resume */
 
 .button {
@@ -189,26 +182,12 @@ body {
 
 .image-hover img:hover {
 
-    transform: scale 0.01 ease;
+    transition: transform 0.01s ease;
     transform: scale(1.015);
 
 }
 
 
-
-
-/* Agregar estilos básicos para mejorar la apariencia */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    /* Cambia estos colores por los que prefieras */
-    background: linear-gradient(to right, #384455, #434f5f); /* Degradado suave */
-    min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
-    margin: 0; /* Elimina el margen por defecto */
-    font-family: Arial, sans-serif; /* Cambia la fuente si lo deseas */
-    color: #333;
-}
 
 
 /* Aplicar margen lateral */
@@ -236,66 +215,6 @@ body {
     transform: scale(1.1);
 }
 
-.navbar {
-    position: fixed; /* Fija la barra de navegación */
-    top: 0; /* Ubicada en la parte superior */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    z-index: 1000; /* Asegurar que quede por encima de otros elementos */
-    width: 98%; /* Ocupar todo el ancho de la pantalla */
-}
-
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.menu-icon {
-    font-size: 2em;
-    cursor: pointer;
-}
-
-
-/* Inicialmente ocultamos el menú */
-.nav-menu {
-    display: none;
-    list-style: none;
-    padding: 0;
-    background-color: #333;
-    margin-top: 50px;
-    position: absolute;
-    width: 100%;
-    z-index: 999;
-}
-
-/* Cuando se activa, el menú se mostrará */
-.nav-menu.active {
-    display: block;
-}
-
-.nav-menu li {
-    padding: 10px;
-}
-
-.nav-menu li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-
-}
-
-.nav-menu li a:hover {
-    background-color: #444;
-}
-
-h2, h3 {
-    color: #333;
-}
-
 p {
     font-size: 1.1em;
     line-height: 1.6;
@@ -315,14 +234,6 @@ img {
     margin: 10px;
 }
 
-/* General */
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
 
 h1, h2 {
     color: #ffffff;
@@ -337,22 +248,6 @@ p {
     color: #ffffff;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #007bff;
-    padding: 10px 20px;
-    position: relative; /* Cambiado a relative */
-    z-index: 10; /* Asegura que el navbar esté por encima de otros elementos */
-}
 
 .logo {
     color: white;
@@ -360,37 +255,14 @@ body {
     font-weight: 600;
 }
 
-.menu-icon {
-    display: none; /* Ocultamos el icono por defecto */
-    font-size: 28px;
-    color: white;
-    cursor: pointer;
-}
-
-.nav-menu {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    margin: 0; /* Elimina margen para evitar superposición */
-}
-
-.nav-menu li {
-    margin: 0 15px;
-}
-
-.nav-menu a {
-    color: white;
-    text-decoration: none;
-}
-
 .section {
-    margin: 20px;
-    padding: 20px;
+    margin: 0 auto;
+    padding: 50px 20px;
     background: linear-gradient(to bottom, #2a303a, #1f2631); /* Degradado suave */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
 }
-
 .section2 {
     margin: 20px;
     padding: 80px;
@@ -400,89 +272,13 @@ body {
     
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #007bff;
-    padding: 10px 20px;
-    position: fixed; /* Cambiar a fixed */
-    width: 100%;
-    z-index: 10; /* Asegura que el navbar esté por encima de otros elementos */
-}
-
-.logo {
-    color: white;
-    font-size: 24px;
-    font-weight: 600;
-}
-
-.menu-icon {
-    display: none; /* Ocultamos el icono por defecto */
-    font-size: 28px;
-    color: white;
-    cursor: pointer;
-}
-
-.nav-menu {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    margin: 0; /* Elimina margen para evitar superposición */
-}
-
-.nav-menu li {
-    margin: 0 15px;
-}
-
-.nav-menu a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Estilos para el menú hamburguesa */
-@media (max-width: 768px) {
-    .menu-icon {
-        display: block; /* Mostrar icono de menú en pantallas pequeñas */
-    }
-
-    .nav-menu {
-        display: none; /* Ocultar menú por defecto */
-        flex-direction: column; /* Mostrar en columnas */
-        position: absolute;
-        top: 60px; /* Ajustar según el tamaño de la navbar */
-        left: 0;
-        width: 100%;
-        background-color: #007bff; /* Fondo del menú desplegable */
-    }
 
 
-    .nav-menu.active {
-        display: flex; /* Mostrar menú cuando esté activo */
-    }
-
-    .nav-menu li {
-        margin: 10px 0; /* Margen entre elementos */
-        text-align: center; /* Centrar texto */
-    }
-}
-
-/* Ajuste para evitar superposición del contenido principal */
-.hero {
-    padding-top: 180px; /* Agregar espacio para el navbar */
-}
 
 /* Hero Section */
 .hero {
     text-align: center; /* Centra el contenido */
-    padding: 50px 20px; /* Espaciado alrededor del contenido */
+    padding: 70px 20px; /* Espaciado alrededor del contenido */
     color: #ffffff; /* Color del texto */
 }
 
@@ -514,11 +310,7 @@ h1 {
 }
 
 /* Section */
-.section {
-    padding: 50px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 
 h2 {
     font-size: 2em; /* Tamaño de la fuente */
@@ -559,7 +351,7 @@ h2 {
 
 .portfolio-templates img:hover {
     transform: scale(1.125);
-    transform:perspective(150deg)
+    transform:perspective(150deg);
 }
 
 
@@ -629,11 +421,6 @@ footer p {
 #cover-letter {
     text-align: center; /* Para centrar todo el contenido dentro de la sección */
 }
-
-.centrar-texto {
-    text-align: center; /* Específicamente para centrar el texto del párrafo */
-}
-
 #contacto {
     padding: 40px;
     background-color: #f8f8f8;
@@ -685,28 +472,20 @@ footer p {
 .social-icons a:hover {
     color: #0056b3;
 }
-
-
-
-
 #recursos h2{
     text-align: center;
 }
-
-
 /* Estilos del carrusel */
 .carousel-container {
     overflow: hidden;
     width: 100%;
 }
-
 .carousel-track {
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth; /* Scroll suave */
     scrollbar-width: none; /* Esconder la barra de scroll en Firefox */
 }
-
 .carousel-track::-webkit-scrollbar {
     display: none; /* Esconder la barra de scroll en Chrome/Safari */
 }
@@ -714,6 +493,7 @@ footer p {
     width: calc(33.33% - 10px); /* Mostrar 3 imágenes a la vez */
     object-fit: cover;
 }
+
 /*boton */
 #WhatsAppProduct{
     display: inline-block;
@@ -732,12 +512,6 @@ footer p {
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
 
-
-
-
-
-
-
 /*Sparkles*/
 #effect-container {
     position: absolute;
@@ -747,7 +521,6 @@ footer p {
     height: 100%;
     pointer-events: none;
 }
-
 .sparkle {
     position: absolute;
     width: 5px;
@@ -758,7 +531,6 @@ footer p {
     opacity: 0;
     animation: sparkleMove 0.5s ease-out forwards;
 }
-
 @keyframes sparkleMove {
     0% {
         transform: scale(0.5);
@@ -769,13 +541,11 @@ footer p {
         opacity: 0;
     }
 }
-
 .click-effect {
     animation: explode 0.5s ease-out forwards;
     background-color: #b200ff; /* Color morado */
     box-shadow: 0 0 20px 10px rgba(178, 0, 255, 0.8);
 }
-
 @keyframes explode {
     0% {
         transform: scale(0.5);
