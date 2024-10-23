@@ -329,7 +329,32 @@ body {
         }
 
 
+     /* Image Links */
+    .image-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
         
+    }
+
+    .image-links a {
+        display: flex; /* Cambia a flex para alinear el texto con la imagen */
+        flex-direction: column; /* Coloca la imagen y el texto en columna */
+        align-items: center; /* Centra el contenido horizontalmente */
+        text-align: center; /* Centra el texto debajo de la imagen */
+    }
+    
+    .tooltip-text {
+        text-align: center; /* Centra el texto */
+        color: white; /* Color del texto */
+        margin-top: 5px; /* Espacio entre la imagen y el texto */
+        /* Ajusta el tamaño del texto si es necesario */
+    }
+
+    
+
+  
 
 
 }
@@ -338,7 +363,7 @@ body {
 
 
 
-
+/* ------------SOLO PC--------------- */
 @media screen and (min-width: 1024px){
     /* Resumes */
 
@@ -395,6 +420,48 @@ body {
     transition: transform 0.01s ease;
     transform: scale(1.015);
 }
+
+
+/* Image Links */
+.image-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.image-links a {
+    display: inline-block;
+    position: relative; /* Necesario para el tooltip */
+    transition: transform 0.3s ease;
+}
+
+.image-links a:hover {
+    transform: scale(1.1);
+}
+
+/* Tooltip Styles */
+.tooltip-text {
+    visibility: hidden; /* Oculto por defecto */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro y transparente */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 95%; /* Muestra el tooltip encima de la imagen */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    opacity: 0; /* Invisible al inicio */
+    transition: opacity 0.3s ease;
+    z-index: 1; /* Asegura que esté por encima de otros elementos */
+}
+
+.image-links a:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}   
     
 }
 
@@ -564,46 +631,7 @@ h2 {
 
 
 
-/* Image Links */
-.image-links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-}
 
-.image-links a {
-    display: inline-block;
-    position: relative; /* Necesario para el tooltip */
-    transition: transform 0.3s ease;
-}
-
-.image-links a:hover {
-    transform: scale(1.1);
-}
-
-/* Tooltip Styles */
-.tooltip-text {
-    visibility: hidden; /* Oculto por defecto */
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro y transparente */
-    color: #fff; /* Texto blanco */
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 10px;
-    position: absolute;
-    bottom: 120%; /* Muestra el tooltip encima de la imagen */
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    opacity: 0; /* Invisible al inicio */
-    transition: opacity 0.3s ease;
-    z-index: 1; /* Asegura que esté por encima de otros elementos */
-}
-
-.image-links a:hover .tooltip-text {
-    visibility: visible;
-    opacity: 1;
-}
 
 
 /* Footer */
