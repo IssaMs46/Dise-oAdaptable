@@ -9,7 +9,7 @@
 /* --------------------------TABLET------------------------------ */
 /*------------------------------------------------------------- */
 
-@media screen and (max-width: 1024px) and (min-width: 764px){ 
+@media screen and (max-width: 1050px) and (min-width: 764px){ 
 
     /* Botones de cover letter y resume */
     
@@ -463,6 +463,38 @@ body {
     visibility: visible;
     opacity: 1;
 }   
+
+.button {
+    display: inline-block;
+    padding: 15px 30px; /* Ajusta el tamaño del botón */
+    margin-top: 10px; /* Espaciado arriba del botón */
+    background: linear-gradient(135deg, #4e54c8, #8f94fb); /* Degradado atractivo */
+    border: none; /* Sin borde */
+    border-radius: 30px; /* Bordes redondeados */
+    color: white; /* Color del texto */
+    font-size: 18px; /* Tamaño de la fuente */
+    font-weight: bold; /* Fuente en negrita */
+    text-decoration: none; /* Quitar subrayado */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+
+
+.button h2{
+    color: white;
+}
+
+.button:hover {
+    transform: translateY(-3px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+.button:active {
+    transform: translateY(1px); /* Efecto de hundimiento al hacer clic */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Regresa a la sombra original */
+}
     
 }
 
