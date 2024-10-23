@@ -1,21 +1,11 @@
-// Esperar a que el DOM esté completamente cargado
-document.addEventListener("DOMContentLoaded", function() {
-  // Seleccionar el ícono del menú hamburguesa
-  const menuIcon = document.querySelector('.menu-icon');
-  
-  // Seleccionar el menú de navegación
-  const navMenu = document.querySelector('#nav-menu');
-  
-  // Agregar un evento de click al ícono del menú
-  menuIcon.addEventListener('click', function() {
-      // Alternar la clase 'active' para mostrar u ocultar el menú
-      navMenu.classList.toggle('active');
-  });
-});
+// Seleccionamos el icono del menú y el propio menú
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-menu');
 
-document.getElementById("menu-toggle").addEventListener("click", function() {
-  const navMenu = document.getElementById("nav-menu");
-  navMenu.classList.toggle("active");
+// Agregamos un event listener para detectar el click en el icono del menú
+menuToggle.addEventListener('click', () => {
+    // Alternamos la clase 'active' en el menú para mostrarlo u ocultarlo
+    navMenu.classList.toggle('active');
 });
 
 function sendWhatsAppMessage() {
