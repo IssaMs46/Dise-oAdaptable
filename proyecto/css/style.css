@@ -556,3 +556,37 @@ footer p {
         opacity: 0;
     }
 }
+
+
+/* Estilos para dispositivos móviles (menores de 768px) */
+@media only screen and (max-width: 768px) {
+    /* Ajusta el diseño para móviles */
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .contenedor {
+        flex-direction: column; /* Por ejemplo, poner los elementos uno debajo del otro */
+    }
+}
+
+/* Estilos para tablets (768px a 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Ajusta el diseño para tablets */
+    body {
+        font-size: 16px;
+        padding: 20px;
+    }
+    .contenedor {
+        flex-direction: row; /* Si prefieres mostrar los elementos uno al lado del otro */
+    }
+}
+
+/* Estilos para pantallas de escritorio (mayores a 1024px) */
+@media only screen and (min-width: 1024px) {
+    /* Ajusta el diseño para escritorio */
+    body {
+        font-size: 18px;
+        padding: 30px;
+    }
+}
