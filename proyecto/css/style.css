@@ -24,15 +24,12 @@
         font-size: 18px; /* Tamaño de la fuente */
         font-weight: bold; /* Fuente en negrita */
         text-decoration: none; /* Quitar subrayado */
-        text-align: center; /* Centrar el texto */
         transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra */
         cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
     }
     
-    #plantillas_boton{
-        text-align: center;
-    }
+
     
     .button h2{
         color: white;
@@ -51,6 +48,53 @@
     #plantillas h2{
         text-align: center;
     }
+
+
+        /* Resumes */
+
+    .resume-examples {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+    }
+    .resume-examples h3
+    {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+    }
+
+    .example {
+        text-align: center;
+        flex: 1;
+        margin: 0 10px; /* Espaciado entre ejemplos */
+    }
+
+    .example img {
+        max-width: 100%;
+        border-radius: 10px; /* Bordes redondeados para las imágenes */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para las imágenes */
+    }
+
+    .checklist {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #2b3546; /* Fondo oscuro para la checklist */
+        border-radius: 10px; /* Bordes redondeados */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para la checklist */
+    }
+
+    .checklist ul {
+        list-style-type: none; /* Quitar los puntos de la lista */
+        padding: 0; /* Quitar el padding por defecto */
+        margin: 0; /* Quitar el margen por defecto */
+    }
+
+    .checklist li {
+        margin: 5px 0; /* Espaciado entre los elementos de la lista */
+        color: white;
+    }
+
+    
 }
 
 
@@ -61,6 +105,8 @@
 /*------------------------------------------------------------- */
 
 @media screen and (max-width: 764px){
+
+    /* BOTON */
     .button {
         display: inline-block;
         padding: 15px 30px; /* Ajusta el tamaño del botón */
@@ -74,10 +120,7 @@
         text-decoration: none; /* Quitar subrayado */
         text-align: center; /* Centrar el texto */
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra */
-    }
-    
-    #plantillas_boton{
-        text-align: center;
+        
     }
     
     .button h2{
@@ -88,6 +131,63 @@
     #plantillas h2{
         text-align: center;
     }
+
+
+        /* Resumes */
+
+    .resume-examples {
+        justify-content: space-between;
+        margin: 20px 0;
+    }
+    .resume-examples h3
+    {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .example {
+        flex: 1;
+        margin: 0 10px; /* Espaciado entre ejemplos */
+    }
+
+    .example img {
+        max-width: 75%;
+        border-radius: 10px; /* Bordes redondeados para las imágenes */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para las imágenes */
+    }
+
+    .checklist {
+        margin-top: 40px;
+        padding: 10px;
+        background-color: #2b3546; /* Fondo oscuro para la checklist */
+        border-radius: 10px; /* Bordes redondeados */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para la checklist */
+    }
+
+    .checklist h3{
+        font-size: 1.5em;
+    }
+
+    
+    .checklist ul {
+        list-style-type: none; /* Quitar los puntos de la lista */
+        padding: 0; /* Quitar el padding por defecto */
+        margin: 0; /* Quitar el margen por defecto */
+    }
+
+    .checklist li {
+        margin: 5px 0; /* Espaciado entre los elementos de la lista */
+        color: white;
+    }
+
+    #resumes-button{
+        margin-top: 50px;
+    }
+
+    .example p{
+        margin-top: auto;
+    }
+    
 }
 
 
@@ -129,14 +229,13 @@ body {
     position: absolute;
     width: 100%;
     z-index: 999;
-    justify-content: center;
+
 }
 .nav-menu li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     padding: 8px 16px;
-    
 }
 /* Cuando se activa, el menú se mostrará */
 .nav-menu.active {
@@ -146,7 +245,6 @@ body {
 .nav-menu li {
     padding: 10px;
     margin: 0 15px;
-    
 }
 
 .nav-menu li a:hover {
@@ -158,8 +256,9 @@ body {
     text-decoration: none;
 }
 
-/* Estilos responsivos */
-@media (max-width: 768px) {
+/* ------------- CEL Y TABLET -----------------*/
+@media (max-width: 1024px) {
+
     .menu-icon {
         display: block; /* Mostrar menú hamburguesa en móviles */
         position: absolute;
@@ -207,15 +306,66 @@ body {
         padding: 10px 0;
         display: block; /* Cada enlace toma toda la fila */
     }
+
+
+   /* CARRUSEL */
+
+        /* Estilos del carrusel */
+        .carousel-container {
+            overflow: hidden;
+            width: 100%;
+        }
+        .carousel-track {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth; /* Scroll suave */
+            scrollbar-width: none; /* Esconder la barra de scroll en Firefox */
+        }
+        .carousel-track::-webkit-scrollbar {
+            display: none; /* Esconder la barra de scroll en Chrome/Safari */
+        }
+        #plantillas{
+            text-align: center;
+        }
+
+
+     /* Image Links */
+    .image-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        
+    }
+
+    .image-links a {
+        display: flex; /* Cambia a flex para alinear el texto con la imagen */
+        flex-direction: column; /* Coloca la imagen y el texto en columna */
+        align-items: center; /* Centra el contenido horizontalmente */
+        text-align: center; /* Centra el texto debajo de la imagen */
+    }
+    
+    .tooltip-text {
+        text-align: center; /* Centra el texto */
+        color: white; /* Color del texto */
+        margin-top: 5px; /* Espacio entre la imagen y el texto */
+        /* Ajusta el tamaño del texto si es necesario */
+    }
+
+    
+
+  
+
+
 }
 
 
 
 
 
-
-
-/* Resumes */
+/* ------------SOLO PC--------------- */
+@media screen and (min-width: 1024px){
+    /* Resumes */
 
 .resume-examples {
     display: flex;
@@ -269,6 +419,50 @@ body {
 
     transition: transform 0.01s ease;
     transform: scale(1.015);
+}
+
+
+/* Image Links */
+.image-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.image-links a {
+    display: inline-block;
+    position: relative; /* Necesario para el tooltip */
+    transition: transform 0.3s ease;
+}
+
+.image-links a:hover {
+    transform: scale(1.1);
+}
+
+/* Tooltip Styles */
+.tooltip-text {
+    visibility: hidden; /* Oculto por defecto */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro y transparente */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 95%; /* Muestra el tooltip encima de la imagen */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    opacity: 0; /* Invisible al inicio */
+    transition: opacity 0.3s ease;
+    z-index: 1; /* Asegura que esté por encima de otros elementos */
+}
+
+.image-links a:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}   
+    
 }
 
 /* Aplicar margen lateral */
@@ -343,7 +537,6 @@ p {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 1200px;
-    text-align: center;
 }
 .section2 {
     margin: 20px;
@@ -426,55 +619,19 @@ h2 {
 }
 
 .portfolio-templates img {
-    width: 200px;
+    width: 300px;
     height: auto;
     transition: transform 0.3s ease;
 }
 
 .portfolio-templates img:hover {
     transform: scale(1.125);
+    transform:perspective(150deg);
 }
 
-/* Image Links */
-.image-links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-}
 
-.image-links a {
-    display: inline-block;
-    position: relative; /* Necesario para el tooltip */
-    transition: transform 0.3s ease;
-}
 
-.image-links a:hover {
-    transform: scale(1.1);
-}
 
-/* Tooltip Styles */
-.tooltip-text {
-    visibility: hidden; /* Oculto por defecto */
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro y transparente */
-    color: #fff; /* Texto blanco */
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 10px;
-    position: absolute;
-    bottom: 120%; /* Muestra el tooltip encima de la imagen */
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    opacity: 0; /* Invisible al inicio */
-    transition: opacity 0.3s ease;
-    z-index: 1; /* Asegura que esté por encima de otros elementos */
-}
-
-.image-links a:hover .tooltip-text {
-    visibility: visible;
-    opacity: 1;
-}
 
 
 /* Footer */
@@ -554,24 +711,7 @@ footer p {
 #recursos h2{
     text-align: center;
 }
-/* Estilos del carrusel */
-.carousel-container {
-    overflow: hidden;
-    width: 100%;
-}
-.carousel-track {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth; /* Scroll suave */
-    scrollbar-width: none; /* Esconder la barra de scroll en Firefox */
-}
-.carousel-track::-webkit-scrollbar {
-    display: none; /* Esconder la barra de scroll en Chrome/Safari */
-}
-.carousel-track img {
-    width: calc(33.33% - 10px); /* Mostrar 3 imágenes a la vez */
-    object-fit: cover;
-}
+
 
 /*boton */
 #WhatsAppProduct{
