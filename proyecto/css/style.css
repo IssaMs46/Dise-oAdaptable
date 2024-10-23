@@ -563,7 +563,7 @@ footer p {
     /* Ajusta el diseño para móviles */
     body {
         font-size: 14px;
-        padding: 10px;
+       
     }
     .contenedor {
         flex-direction: column; /* Por ejemplo, poner los elementos uno debajo del otro */
@@ -575,7 +575,7 @@ footer p {
     /* Ajusta el diseño para tablets */
     body {
         font-size: 16px;
-        padding: 20px;
+        
     }
     .contenedor {
         flex-direction: row; /* Si prefieres mostrar los elementos uno al lado del otro */
@@ -587,6 +587,6 @@ footer p {
     /* Ajusta el diseño para escritorio */
     body {
         font-size: 18px;
-        padding: 30px;
+        
     }
 }
