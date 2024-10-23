@@ -4,7 +4,6 @@ body {
     /* Cambia estos colores por los que prefieras */
     background: linear-gradient(to right, #384455, #434f5f); /* Degradado suave */
     min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
-    margin: 0; /* Elimina el margen por defecto */
     font-family: 'Poppins', sans-serif; /* Fuente predeterminada */
     color: #333;
 }
@@ -176,19 +175,13 @@ body {
     display: inline-block;
     transition: transform 0.2s ease; /* Transición suave */
     transform-origin: center; /* Establece el origen de la transformación en el centro */
-
-
 }
 
 .image-hover img:hover {
 
     transition: transform 0.01s ease;
     transform: scale(1.015);
-
 }
-
-
-
 
 /* Aplicar margen lateral */
 .content {
