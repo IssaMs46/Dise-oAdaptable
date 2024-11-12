@@ -680,9 +680,13 @@ footer p {
 }
 
 #resumes, #nosotros, #servicios {
-    text-align: center; /* Para centrar todo el contenido dentro de la sección */
+    text-align: justify; /* Para centrar todo el contenido dentro de la sección */
 }
 
+#centrado
+{
+    text-align: center;
+}
 .centrar-texto {
     text-align: center; /* Específicamente para centrar el texto del párrafo */
 }
